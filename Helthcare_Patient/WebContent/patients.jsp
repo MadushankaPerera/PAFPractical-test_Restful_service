@@ -3,8 +3,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="Views/bootstrap.min.css">
-<meta charset="ISO-8859-1">
+<meta charset="utf-8">
+
+<!-- head code meta tag -->
+<meta name="viweport" content="width= divice-width, initial-scale=1">
+
+<!-- link CSS page to the index.html page -->
+<link href="views/bootstrap.min.css" rel="stylesheet">
+
+<!-- java script file -->
+<script type="text/javascript" src="Components/jquery-3.5.0.min.js"></script>
+
 <title>Health care system</title>
 </head>
 <body>
