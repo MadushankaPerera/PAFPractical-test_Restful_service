@@ -17,26 +17,31 @@
 <title>Health care system</title>
 </head>
 <body>
-	<div>
-		<h1>Health care system</h1>
-		<br>
-	</div>
-	<div>
-		<h2>Patient Management Details</h2>
-		<form method="post" action="patients.jsp">
+	<div class="container">
 
-			First Name: <input name="patientFirstName" type="text"><br>
-			Last Name: <input name="patientlastName" type="text"><br>
-			Full Name: <input name="patientfullName" type="text"><br>
-			Home Address: <input name="patientAddress" type="text"><br>
-			Date of Birth:<input name="patintDOB" type="text"><br>
-			Sex: <input name="patientsex" type="text"><br> Tell-No:<input
-				name="patientTell" type="text"><br> Age: <input
-				name="patientAge" type="text"><br> NIC:<input
-				name="patientNIC" type="text"><br> <input
-				name="btnSubmit" type="submit" value="Save">
-		</form>
-		<br>
+		<div class="row">
+			<div class="col">
+				<h2 class ="text-primary ">Patient Management Details</h2><br>
+				<form method="post" action="patients.jsp">
+
+					First Name: <input name="patientFirstName" type="text" class="form-control form-control-sm" placeholder="Enter your first name here"><br>
+					Last Name: <input name="patientlastName" type="text" class="form-control form-control-sm" placeholder="Enter your last name here"><br>
+					Full Name: <input name="patientfullName" type="text"class="form-control form-control-sm" placeholder="Enter your full name here"><br>
+					Home Address: <input name="patientAddress" type="text" class="form-control form-control-sm" placeholder="Enter permenet Home Address"><br>
+					Date of Birth:<input name="patintDOB" type="text" class="form-control form-control-sm" placeholder="Enter your birth day"><br>
+					Sex: <input name="patientsex" type="text" class="form-control form-control-sm" placeholder="Enter your sex: EX. Male : 'M' Female : 'F' "><br>
+					Tell-No:<input name="patientTell" type="text" class="form-control form-control-sm" placeholder="Telephone Number"><br>
+					Age: <input name="patientAge" type="text" class="form-control form-control-sm" placeholder="Age for Today"><br> 
+					NIC:<input name="patientNIC" type="text" class="form-control form-control-sm" placeholder="National Identity Card Number"><br>
+					 
+					<input name="btnSubmit" type="submit" value="Save" class = " btn btn-primary">
+				</form>
+				<br>
+			</div>
+		</div>
+
+
+
 	</div>
 
 </body>
