@@ -1,6 +1,8 @@
 package com;
 
 import java.io.IOException;
+import java.util.Map;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -59,7 +61,21 @@ public class PatientsAPI extends HttpServlet {
 	 */
 	protected void doPut(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		
+//		Map paras = getParasMap(request);
+//		
+//		String output = patientobj.updatePatient(paras.get("hidPatientIDSave").toString(), 
+//							paras.get("firstName").toString(),
+//							paras.get("lastName").toString(), 
+//							paras.get("fullName").toString(), 
+//							paras.get("address").toString(),
+//							paras.get("sex").toString(),
+//							paras.get("cNumber").toString(), 
+//							paras.get("age").toString(), 
+//							paras.get("nic").toString(),
+//							paras.get("dob").toString()); 
+//		
+//		response.getWriter().write(output); 
 	}
 
 	/**

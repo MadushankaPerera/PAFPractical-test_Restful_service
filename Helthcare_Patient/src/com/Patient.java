@@ -113,15 +113,16 @@ public class Patient {
 
 			// binding values
 
-			preparedStmt.setString(1, fname);
-			preparedStmt.setString(2, lname);
-			preparedStmt.setString(3, funame);
-			preparedStmt.setString(4, add);
-			preparedStmt.setString(5, sex);
-			preparedStmt.setString(6, cNum);
-			preparedStmt.setString(7, age);
-			preparedStmt.setString(8, nic);
-			preparedStmt.setString(9, dob);
+			preparedStmt.setInt(1, 0);
+			preparedStmt.setString(2, fname);
+			preparedStmt.setString(3, lname);
+			preparedStmt.setString(4, funame);
+			preparedStmt.setString(5, add);
+			preparedStmt.setString(6, sex);
+			preparedStmt.setString(7, cNum);
+			preparedStmt.setString(8, age);
+			preparedStmt.setString(9, nic);
+			preparedStmt.setString(10, dob);
 
 			// execute the statement
 			preparedStmt.execute();
@@ -142,7 +143,7 @@ public class Patient {
 	}
 
 	// UPDATE patient Details
-	public String updatePatient(String fname, String lname, String funame, String add, String sex, String cNum,
+	public String updatePatient(String patientID,String fname, String lname, String funame, String add, String sex, String cNum,
 			String age, String nic, String dob) {
 
 		String output = "";
@@ -163,6 +164,7 @@ public class Patient {
 			PreparedStatement preparedStmt = con.prepareStatement(query);
 
 			// binding values
+			
 			preparedStmt.setString(1, fname);
 			preparedStmt.setString(2, lname);
 			preparedStmt.setString(3, funame);
@@ -172,6 +174,7 @@ public class Patient {
 			preparedStmt.setString(7, age);
 			preparedStmt.setString(8, nic);
 			preparedStmt.setString(9, dob);
+			preparedStmt.setInt(10, Integer.parseInt(patientID)); 
 
 			// execute the statement
 			preparedStmt.execute();
