@@ -29,8 +29,10 @@ public class Patient {
 
 			if (con == null) {
 
-				return "Error while connecting to the database for reading.";
+				//return "Error while connecting to the database for reading.";
+				return "Good Bye !";
 
+				
 			}
 
 			// Prepare the HTML table to be displayed
@@ -38,7 +40,7 @@ public class Patient {
 					+ "<th>Home Address</th><th>sex</th><th>Countact Number</th><th>Age</th><th>NIC</th><th>DOB</th><th>Update</th><th>Remove</th></tr>";
 
 			// SQL statements
-			String query = "select * from ";
+			String query = "select * from patienttable";
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery(query);
 

@@ -14,22 +14,29 @@
 
 <!-- java script file -->
 <script type="text/javascript" src="Components/jquery-3.5.0.min.js"></script>
-<title>Health care system</title>
+<script src="Components/patients.js"></script>
+
 
 <style type="text/css">
-body {
-	background-image: url("image/image2.jpg");
-	background-size: cover
+	body{
+		background-image: url("image/image5.jpeg");
+		background-size: cover;
 }
+
 </style>
+
+<title>Health care system</title>
+
+
 </head>
 <body>
 	<div class="container">
 
 		<div class="row">
-			<div class="col= 6">
-				<h2 class="text-primary ">Patient Management Details</h2>
-				<br>
+			<div class="col-8">
+				<!--<h2 class="text-primary">Patient Management Details</h2> -->
+				<h2>Patient Management Details</h2>
+				<br><br>
 				<form method="post" action="patients.jsp" id="formPatient">
 
 					First Name: <input name="patientFirstName" id="FirstName"
@@ -61,14 +68,15 @@ body {
 						name="btnSubmit" type="submit" value="Save"
 						class=" btn btn-primary"> <input type="hidden"
 						id="hidPatientIDSave" name="hidPatientIDSave" value="">
+						
+						<br>
+							<!-- ALERTS -->
+							<div id="alertSuccess" class="alert alert-success"></div>
+							<div id="alertError" class="alert alert-danger"></div>
+						<br>
 				</form>
 				<br>
-
-				<!-- ALERTS -->
-				<div id="alertSuccess" class="alert alert-success"></div>
-				<div id="alertError" class="alert alert-danger"></div>
-
-				<br>
+				
 				<div id="divPatietsGrid">
 					<%
 						Patient patientobj = new Patient();
@@ -78,10 +86,6 @@ body {
 
 			</div>
 		</div>
-
-
-
 	</div>
-
 </body>
 </html>
