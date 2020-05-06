@@ -18,7 +18,7 @@
 
 <style type="text/css">
 body {
-	background-image: url("image/image1.jpg");
+	background-image: url("image/image2.jpg");
 	background-size: cover
 }
 </style>
