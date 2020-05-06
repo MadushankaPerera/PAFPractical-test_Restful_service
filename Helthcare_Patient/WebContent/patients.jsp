@@ -1,3 +1,4 @@
+<%@page import="com.Patient"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -35,8 +36,22 @@
 					NIC:<input name="patientNIC" id="NIC" type="text" class="form-control form-control-sm" placeholder="National Identity Card Number"><br>
 					 
 					<input name="btnSubmit" type="submit" value="Save" class = " btn btn-primary">
+					<input type="hidden" id="hidPatientIDSave" name="hidPatientIDSave" value="">
 				</form>
 				<br>
+		
+					<!-- ALERTS -->
+					<div id="alertSuccess" class="alert alert-success"></div> 
+					<div id="alertError" class="alert alert-danger"></div> 
+		
+				<br>
+				<div id="divPatientsGrid">
+					<%
+						Patient patientobj = new Patient(); 
+						out.print(patientobj.readPatients());
+					%>
+				</div>
+				
 			</div>
 		</div>
 
