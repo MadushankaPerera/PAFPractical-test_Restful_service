@@ -14,7 +14,7 @@
 
 <!-- java script file -->
 <script type="text/javascript" src="Components/jquery-3.5.0.min.js"></script>
-<script src="Components/patients.js"></script>
+<script src="components/patient.js"></script>
 
 
 <style type="text/css">
@@ -30,7 +30,7 @@
 
 </head>
 <body>
-	<div class="container">
+	<div class="container mt-2">
 
 		<div class="row">
 			<div class="col-8">
@@ -68,6 +68,7 @@
 						name="btnSubmit" type="submit" value="Save"
 						class=" btn btn-primary"> <input type="hidden"
 						id="hidPatientIDSave" name="hidPatientIDSave" value="">
+						<br>
 						
 						<br>
 							<!-- ALERTS -->
@@ -80,7 +81,7 @@
 				<div id="divPatietsGrid">
 					<%
 						Patient patientobj = new Patient();
-					out.print(patientobj.readPatients());
+						out.print(patientobj.readPatients());
 					%>
 				</div>
 
